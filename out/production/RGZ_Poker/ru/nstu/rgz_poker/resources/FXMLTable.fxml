@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" fx:id="tableAnchor" maxHeight="-Infinity" maxWidth="-Infinity"
+         minHeight="-Infinity"
+         minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0"
+         style="-fx-background-color: #3a1937;" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/11.0.14-internal">
+    <children>
+        <Button fx:id="closeGameButton" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="724.0" layoutY="7.0"
+                mnemonicParsing="false" style="-fx-background-color: #eeb4b4;" text="Close Game" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0"/>
+            </font>
+        </Button>
+        <Ellipse fill="#046101" layoutX="396.0" layoutY="308.0" radiusX="359.0" radiusY="209.0" stroke="#612a0e"
+                 strokeType="INSIDE" strokeWidth="10.0"/>
+        <Circle fill="#805e1a" layoutX="400.0" layoutY="517.0" radius="79.0" stroke="#805e1a" strokeType="INSIDE"/>
+        <Circle fill="#3ba40e" layoutX="400.0" layoutY="102.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Circle fill="#3ba40e" layoutX="154.0" layoutY="159.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Circle fill="#3ba40e" layoutX="643.0" layoutY="159.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Circle fill="#c91c1c" layoutX="154.0" layoutY="459.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Circle fill="#3ba40e" layoutX="643.0" layoutY="459.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Circle layoutX="399.0" layoutY="491.0" radius="32.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Ellipse fill="#e4e4e4" layoutX="127.0" layoutY="106.0" radiusX="5.0" radiusY="13.0" stroke="#ffffff00"
+                 strokeType="INSIDE"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0" layoutX="46.0" layoutY="85.0"
+                   stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0" layoutX="46.0" layoutY="506.0"
+                   stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+        <Ellipse fill="#e4e4e4" layoutX="127.0" layoutY="511.0" radiusX="5.0" radiusY="13.0" stroke="#ffffff00"
+                 strokeType="INSIDE"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0" layoutX="351.0" layoutY="33.0"
+                   stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+        <Ellipse fill="#e4e4e4" layoutX="401.0" layoutY="54.0" radiusX="5.0" radiusY="13.0" stroke="#ffffff00"
+                 strokeType="INSIDE"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0" layoutX="654.0" layoutY="88.0"
+                   stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+        <Ellipse fill="#e4e4e4" layoutX="674.0" layoutY="109.0" radiusX="5.0" radiusY="13.0" stroke="#ffffff00"
+                 strokeType="INSIDE"/>
+        <Ellipse fill="#e4e4e4" layoutX="674.0" layoutY="509.0" radiusX="5.0" radiusY="13.0" stroke="#ffffff00"
+                 strokeType="INSIDE"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0" layoutX="654.0" layoutY="505.0"
+                   stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+        <Text fx:id="player1Name" layoutX="51.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="92.0"/>
+        <Text fx:id="player2Name" layoutX="359.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="85.0"/>
+        <Text fx:id="singlePlayerName" layoutX="50.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="92.0"/>
+        <Text fx:id="player3Name" layoutX="662.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="85.0"/>
+        <Text fx:id="player4Name" layoutX="657.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="92.0"/>
+        <Group>
+            <children>
+                <Rectangle fx:id="player1MessageBox" arcHeight="5.0" arcWidth="5.0" fill="#e3e3e3" height="25.0"
+                           layoutX="46.0" layoutY="57.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+                <Text fx:id="player1MessageText" layoutX="54.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="85.0">
+                    <font>
+                        <Font name="ACaslonPro-Bold" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group>
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="60.0" layoutX="149.0" layoutY="55.0"
+                           stroke="#ffffff00" strokeType="INSIDE" width="75.0"/>
+                <Text fx:id="player1Chips" layoutX="168.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="56.34375"/>
+                <Text layoutX="154.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+                <Text fx:id="player1Pot" layoutX="160.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="RIGHT" wrappingWidth="61.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="151.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"
+                      wrappingWidth="15.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <HBox fx:id="tableCards" layoutX="265.0" layoutY="277.0" prefHeight="78.0" prefWidth="276.0"/>
+        <HBox fx:id="singlePlayerCards" layoutX="114.0" layoutY="365.0" prefHeight="58.0" prefWidth="177.0"/>
+        <HBox fx:id="playerCards1" layoutX="114.0" layoutY="194.0" prefHeight="58.0" prefWidth="177.0"/>
+        <HBox fx:id="playerCards2" layoutX="312.0" layoutY="150.0" prefHeight="58.0" prefWidth="177.0"/>
+        <HBox fx:id="playerCards3" layoutX="503.0" layoutY="194.0" prefHeight="58.0" prefWidth="177.0"/>
+        <HBox fx:id="playerCards4" layoutX="503.0" layoutY="365.0" prefHeight="58.0" prefWidth="177.0"/>
+        <HBox fx:id="cardDeck" layoutX="325.0" layoutY="506.0" prefHeight="58.0" prefWidth="69.0"/>
+        <Group fx:id="bigBlindChip" layoutX="345.0" layoutY="-70.0">
+            <children>
+                <Circle layoutX="100.0" layoutY="200.0" radius="15.0" stroke="#5a4505" strokeType="INSIDE">
+                    <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusAngle="18.43" radius="0.5232558139534884">
+                            <stops>
+                                <Stop color="BLACK"/>
+                                <Stop color="WHITE" offset="1.0"/>
+                            </stops>
+                        </RadialGradient>
+                    </fill>
+                </Circle>
+                <Circle fill="#d0ca59" layoutX="100.0" layoutY="200.0" radius="12.0" stroke="#7f630e"
+                        strokeType="INSIDE"/>
+                <Text fill="#535151" layoutX="-125.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BB"
+                      textAlignment="CENTER" wrappingWidth="49.63671875" x="200.0" y="200.0">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group fx:id="smallBlindChip" layoutX="106.0" layoutY="-40.0">
+            <children>
+                <Circle layoutX="100.0" layoutY="200.0" radius="15.0" stroke="#5a4505" strokeType="INSIDE">
+                    <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusAngle="18.43" radius="0.5232558139534884">
+                            <stops>
+                                <Stop color="BLACK"/>
+                                <Stop color="WHITE" offset="1.0"/>
+                            </stops>
+                        </RadialGradient>
+                    </fill>
+                </Circle>
+                <Circle fill="#d0ca59" layoutX="100.0" layoutY="200.0" radius="12.0" stroke="#7f630e"
+                        strokeType="INSIDE"/>
+                <Text fill="#535151" layoutX="-125.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SB"
+                      textAlignment="CENTER" wrappingWidth="49.63671875" x="200.0" y="200.0">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group fx:id="dealerChip" layoutX="106.0" layoutY="253.0">
+            <children>
+                <Circle layoutX="100.0" layoutY="200.0" radius="15.0" stroke="#5a4505" strokeType="INSIDE">
+                    <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" focusAngle="18.43" radius="0.5232558139534884">
+                            <stops>
+                                <Stop color="BLACK"/>
+                                <Stop color="WHITE" offset="1.0"/>
+                            </stops>
+                        </RadialGradient>
+                    </fill>
+                </Circle>
+                <Circle fill="#d0ca59" layoutX="100.0" layoutY="200.0" radius="12.0" stroke="#7f630e"
+                        strokeType="INSIDE"/>
+                <Text fill="#535151" layoutX="-125.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D"
+                      textAlignment="CENTER" wrappingWidth="49.63671875" x="200.0" y="200.0">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="5.0" layoutY="420.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="60.0" layoutX="149.0" layoutY="85.0"
+                           stroke="#ffffff00" strokeType="INSIDE" width="75.0"/>
+                <Text fx:id="singlePlayerChips" layoutX="167.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="55.34375"/>
+                <Text layoutX="156.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+                <Text layoutX="152.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"
+                      wrappingWidth="15.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="singlePlayerPot" layoutX="161.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="RIGHT" wrappingWidth="60.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="439.0" layoutY="419.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="60.0" layoutX="135.0" layoutY="85.0"
+                           stroke="#ffffff00" strokeType="INSIDE" width="75.0"/>
+                <Text fx:id="player4Chips" layoutX="152.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="57.34375"/>
+                <Text layoutX="141.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+                <Text layoutX="138.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"
+                      wrappingWidth="15.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="player4Pot" layoutX="147.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="RIGHT" wrappingWidth="60.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="434.0" layoutY="1.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="60.0" layoutX="140.0" layoutY="56.0"
+                           stroke="#ffffff00" strokeType="INSIDE" width="75.0"/>
+                <Text fx:id="player3Chips" layoutX="156.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="58.34375"/>
+                <Text layoutX="147.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+                <Text layoutX="144.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"
+                      wrappingWidth="15.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="player3Pot" layoutX="153.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="RIGHT" wrappingWidth="59.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="307.0" layoutY="-52.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="60.0" layoutX="149.0" layoutY="55.0"
+                           stroke="#ffffff00" strokeType="INSIDE" width="75.0"/>
+                <Text fx:id="player2Chips" layoutX="166.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="58.34375"/>
+                <Text layoutX="156.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+                <Text layoutX="152.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"
+                      wrappingWidth="15.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="player2Pot" layoutX="161.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="RIGHT" wrappingWidth="60.38671875">
+                    <font>
+                        <Font name="Agency FB Bold" size="24.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="305.0" layoutY="-52.0">
+            <children>
+                <Rectangle fx:id="player2MessageBox" arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0"
+                           layoutX="46.0" layoutY="57.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+                <Text fx:id="player2MessageText" layoutX="54.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="85.0">
+                    <font>
+                        <Font name="ACaslonPro-Bold" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="607.0" layoutY="3.0">
+            <children>
+                <Rectangle fx:id="player3MessageBox" arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0"
+                           layoutX="47.0" layoutY="57.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+                <Text fx:id="player3MessageText" layoutX="55.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="85.0">
+                    <font>
+                        <Font name="ACaslonPro-Bold" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutX="608.0" layoutY="478.0">
+            <children>
+                <Rectangle fx:id="player4MessageBox" arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0"
+                           layoutX="46.0" layoutY="57.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+                <Text fx:id="player4MessageText" layoutX="54.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      textAlignment="CENTER" wrappingWidth="85.0">
+                    <font>
+                        <Font name="ACaslonPro-Bold" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <Group layoutY="478.0">
+            <children>
+                <Rectangle fx:id="singlePlayerMessageBox" arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="25.0"
+                           layoutX="46.0" layoutY="57.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0"/>
+                <Text fx:id="singlePlayerMessageText" layoutX="54.0" layoutY="75.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="85.0">
+                    <font>
+                        <Font name="ACaslonPro-Bold" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <ProgressIndicator fx:id="playerTimeIndicatior" layoutX="40.0" layoutY="159.0" progress="0.0" scaleX="2.5"
+                           scaleY="2.5" visible="false"/>
+        <Pane fx:id="playerActionsPane" layoutX="81.0" layoutY="190.0" opacity="0.0">
+            <children>
+                <Button fx:id="raiseButton" disable="true" layoutX="132.0" layoutY="1.0" mnemonicParsing="false"
+                        prefHeight="40.0" prefWidth="111.0"
+                        style="-fx-background-color:                                 linear-gradient(#ffd65b, #e68400),                                 linear-gradient(#ffef84, #f2ba44),                                 linear-gradient(#ffea6a, #efaa22),                                 linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),                                 linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));                             -fx-background-radius: 30;                             -fx-background-insets: 0,1,2,3,0;                             -fx-text-fill: #654b00;                             -fx-font-weight: bold;                             -fx-font-size: 14px;                             -fx-padding: 10 20 10 20;"
+                        text="RAISE">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="callButton" disable="true" layoutY="1.0" mnemonicParsing="false" prefHeight="40.0"
+                        prefWidth="111.0"
+                        style="-fx-background-color:                                 linear-gradient(#ffd65b, #e68400),                                 linear-gradient(#ffef84, #f2ba44),                                 linear-gradient(#ffea6a, #efaa22),                                 linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),                                 linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));                             -fx-background-radius: 30;                             -fx-background-insets: 0,1,2,3,0;                             -fx-text-fill: #654b00;                             -fx-font-weight: bold;                             -fx-font-size: 14px;                             -fx-padding: 10 20 10 20;"
+                        text="CALL">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="foldButton" disable="true" layoutX="394.0" layoutY="1.0" mnemonicParsing="false"
+                        prefHeight="40.0" prefWidth="111.0"
+                        style="-fx-background-color:                                 linear-gradient(#ffd65b, #e68400),                                 linear-gradient(#ffef84, #f2ba44),                                 linear-gradient(#ffea6a, #efaa22),                                 linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),                                 linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));                             -fx-background-radius: 30;                             -fx-background-insets: 0,1,2,3,0;                             -fx-text-fill: #654b00;                             -fx-font-weight: bold;                             -fx-font-size: 14px;                             -fx-padding: 10 20 10 20;"
+                        text="FOLD">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="allInButton" disable="true" layoutX="525.0" mnemonicParsing="false" prefHeight="40.0"
+                        prefWidth="111.0"
+                        style="-fx-background-color:                                 linear-gradient(#ffd65b, #e68400),                                 linear-gradient(#ffef84, #f2ba44),                                 linear-gradient(#ffea6a, #efaa22),                                 linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),                                 linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));                             -fx-background-radius: 30;                             -fx-background-insets: 0,1,2,3,0;                             -fx-text-fill: #654b00;                             -fx-font-weight: bold;                             -fx-font-size: 14px;                             -fx-padding: 10 20 10 20;"
+                        text="ALL IN">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="checkButton" disable="true" layoutX="254.0" layoutY="1.0" mnemonicParsing="false"
+                        prefHeight="40.0" prefWidth="111.0"
+                        style="-fx-background-color:                                 linear-gradient(#ffd65b, #e68400),                                 linear-gradient(#ffef84, #f2ba44),                                 linear-gradient(#ffea6a, #efaa22),                                 linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),                                 linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));                             -fx-background-radius: 30;                             -fx-background-insets: 0,1,2,3,0;                             -fx-text-fill: #654b00;                             -fx-font-weight: bold;                             -fx-font-size: 14px;                             -fx-padding: 10 20 10 20;"
+                        text="CHECK">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Group layoutX="-1.0" layoutY="12.0">
+            <children>
+                <Rectangle fx:id="roundMessageBox" arcHeight="90.0" arcWidth="90.0" fill="#000000e0" height="71.0"
+                           layoutX="47.0" layoutY="258.0" opacity="0.0" stroke="#aeaeae" strokeLineCap="ROUND"
+                           strokeType="OUTSIDE" width="701.0"/>
+
+                <Text fx:id="roundMessageText" fill="WHITE" layoutX="46.0" layoutY="309.0" opacity="0.0"
+                      strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="700.0">
+                    <font>
+                        <Font size="46.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Group>
+        <SVGPath
+                content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"
+                layoutX="138.0" layoutY="144.0" scaleX="1.6" scaleY="1.6"/>
+        <SVGPath
+                content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"
+                layoutX="385.0" layoutY="86.0" scaleX="1.6" scaleY="1.6"/>
+        <SVGPath
+                content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"
+                layoutX="627.0" layoutY="145.0" scaleX="1.6" scaleY="1.6"/>
+        <SVGPath
+                content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"
+                layoutX="628.0" layoutY="444.0" scaleX="1.6" scaleY="1.6"/>
+        <SVGPath
+                content="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"
+                layoutX="138.0" layoutY="443.0" scaleX="1.6" scaleY="1.6"/>
+        <AnchorPane id="AnchorPane" fx:id="winnersAnchorPane" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                    minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+                    style="-fx-background-color: blue;" visible="false" AnchorPane.bottomAnchor="50.0"
+                    AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Group fx:id="high_hand_display">
+                    <children>
+                        <Text layoutX="245.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="High Hand Winner" textAlignment="CENTER" wrappingWidth="310.50244140625">
+                            <font>
+                                <Font name="Segoe UI Light" size="27.0"/>
+                            </font>
+                        </Text>
+                        <HBox fx:id="highWinningCards" layoutX="290.0" layoutY="203.0" prefHeight="78.0"
+                              prefWidth="220.0" scaleX="1.2" scaleY="1.2">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♣">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text fill="RED" layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="♦">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="5" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♠">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♣">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="8" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <VBox layoutX="33.0" layoutY="203.0" prefHeight="78.0" prefWidth="135.0">
+                            <children>
+                                <Text fx:id="highWinnerName" strokeType="OUTSIDE" strokeWidth="0.0" text="player name"
+                                      textAlignment="RIGHT" wrappingWidth="176.81494140625">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="23.0"/>
+                                    </font>
+                                </Text>
+                                <Text fx:id="highWinnings" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 0"
+                                      textAlignment="RIGHT" wrappingWidth="175.81494140625">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="32.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="625.0" layoutY="215.0" prefHeight="38.0" prefWidth="175.0">
+                            <children>
+                                <Text fx:id="highHandType" strokeType="OUTSIDE" strokeWidth="0.0" text="hand type"
+                                      wrappingWidth="152.81494140625">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="23.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                    </children>
+                </Group>
+                <Group fx:id="low_hand_display" layoutX="-3.0" layoutY="159.0">
+                    <children>
+                        <Text layoutX="246.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Low Hand Winner" textAlignment="CENTER" wrappingWidth="310.50244140625">
+                            <font>
+                                <Font name="Segoe UI Light" size="27.0"/>
+                            </font>
+                        </Text>
+                        <HBox fx:id="lowWinnngCards" layoutX="291.0" layoutY="229.0" prefHeight="78.0"
+                              prefWidth="220.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♣">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text fill="RED" layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="♦">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="5" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♠">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0"
+                                                   stroke="#d0d0d0" strokeType="INSIDE" width="50.0"/>
+                                        <Text layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="♣">
+                                            <font>
+                                                <Font size="39.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="8" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <VBox layoutX="20.0" layoutY="233.0" prefHeight="78.0" prefWidth="196.0">
+                            <children>
+                                <Text fx:id="lowWinnerName" strokeType="OUTSIDE" strokeWidth="0.0" text="player name"
+                                      textAlignment="RIGHT" wrappingWidth="190.81494140625">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="23.0"/>
+                                    </font>
+                                </Text>
+                                <Text fx:id="lowWinnings" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 0"
+                                      textAlignment="RIGHT" wrappingWidth="189.81494140625">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="32.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="557.0" layoutY="203.0" prefHeight="78.0" prefWidth="232.0"/>
+                    </children>
+                </Group>
+                <Button fx:id="playAgainButton" layoutX="51.0" layoutY="514.0" mnemonicParsing="false"
+                        style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),                             radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%); -fx-background-insets: 0,1,2,3; -fx-background-radius: 3,2,2,2; -fx-padding: 12 30 12 30; -fx-text-fill: black; -fx-font-size: 22px;"
+                        text="Continue" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0"/>
+                <Button fx:id="exitGameButton" layoutX="606.0" layoutY="514.0" mnemonicParsing="false"
+                        style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2,3; -fx-background-radius: 3,2,2,2; -fx-padding: 12 30 12 30; -fx-text-fill: white; -fx-font-size: 22px;"
+                        text="Exit Game" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0"/>
+            </children>
+        </AnchorPane>
+
+
+        <AnchorPane id="AnchorPane" fx:id="gameOverAnchorPane" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" visible="false"
+                    AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Group fx:id="high_hand_display1"/>
+                <Button fx:id="newGameButton" layoutX="51.0" layoutY="514.0" mnemonicParsing="false"
+                        style="-fx-background-color: linear-gradient(#f0ff35, #a9ff00),                             radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%); -fx-background-insets: 0,1,2,3; -fx-background-radius: 3,2,2,2; -fx-padding: 12 30 12 30; -fx-text-fill: black; -fx-font-size: 22px;"
+                        text="New Game" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0"/>
+                <Button fx:id="quitGameButton" layoutX="606.0" layoutY="514.0" mnemonicParsing="false"
+                        style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2,3; -fx-background-radius: 3,2,2,2; -fx-padding: 12 30 12 30; -fx-text-fill: white; -fx-font-size: 22px;"
+                        text="Exit Game" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0"/>
+                <Text layoutX="221.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Over"
+                      textAlignment="CENTER" wrappingWidth="372.50244140625">
+                    <font>
+                        <Font name="Segoe UI Light" size="54.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="165.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Balance is"
+                      textAlignment="CENTER" wrappingWidth="242.50244140625">
+                    <font>
+                        <Font name="Segoe UI Light" size="38.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="balanceText" layoutX="473.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="\$ 0" wrappingWidth="242.50244140625">
+                    <font>
+                        <Font name="Segoe UI Light" size="38.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>

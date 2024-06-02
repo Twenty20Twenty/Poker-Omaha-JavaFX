@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #3a1937;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nstu.rgz_poker.FXMLController.RulesController">
+    <children>
+        <Label layoutX="29.0" layoutY="32.0" text="Poker" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="88.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="128.0" text="Omaha hi lo" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="rulesToMenuButton" defaultButton="true" layoutX="25.0" layoutY="605.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#rulesToMenuAction" prefHeight="55.0" prefWidth="190.0" style="-fx-background-color: #eeb4b4;" text="Main Menu" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="28.0" />
+            </font>
+        </Button>
+        <TextArea editable="false" layoutX="486.0" layoutY="14.0" prefHeight="650.0" prefWidth="500.0" text="Ход игры&#10;Игра проходит следующим образом:&#10;    Блайнды. Перед началом игры сидящие слева от дилера игроки ставят блайнды, сначала малый блайнд, а слева от него — большой блайнд. Блайнды ставятся для того, чтобы обеспечить начальный банк.&#10;    Пре-флоп. Игрокам раздается по 4 закрытые карты. Первый игрок, который начинает первый раунд торговли — стрелок. Он сидит слева от большого блайнда.&#10;    Флоп. После пре-флопа на стол выкладываются три общие карты. Затем снова следует круг торговли.&#10;    Терн. Затем выкладывается четвёртая общая карта и снова круг торговли.&#10;    Ривер. И наконец, на стол выкладывается пятая общаякарта.&#10;    Следует последний круг торгов и если на ривере все ставки уравнялись, то карты вскрываются и выясняется сильнейшая пяти карточная комбинация, при этом в отличие от техасского холдема для составления покерной комбинации игрок обязан использовать две карты с руки и три карты со стола.&#10;    Если несколько игроков имеют одинаковые выигрышные комбинации — банк делится поровну.&#10;&#10;    Во время кругов торговли (префлоп, флоп, терн и ривер) покеристы могут делать следующие действия:&#10;&#10;Бет (bet) – первая ставка.&#10;Колл (call) – поддержать предыдущую ставку.&#10;Рейз (raise) – повысить ставку.&#10;Чек (check) – пропуск хода, но не выход из игры. Допустим только в том случае, если до этого ставки в круге торговли еще не было.&#10;Фолд (fold) — сброс карт и выход из игры.&#10;" wrapText="true" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextArea>
+      <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="304.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@papyrus_1441547.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="362.0" fitWidth="367.0" layoutX="66.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coin_5103436.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #3a1937;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nstu.rgz_poker.FXMLController.StatController">
+    <children>
+        <Label layoutX="29.0" layoutY="32.0" text="Poker" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="88.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="128.0" text="Omaha hi lo" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button defaultButton="true" layoutX="25.0" layoutY="605.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#statToMenuAction" prefHeight="55.0" prefWidth="190.0" style="-fx-background-color: #eeb4b4;" text="Main Menu" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="28.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="240.0" fitWidth="254.0" layoutX="33.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coin_5103436.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="391.0" layoutY="156.0" prefHeight="389.0" prefWidth="467.0">
+        <columns>
+          <TableColumn prefWidth="153.0" text="Name" />
+          <TableColumn prefWidth="195.0" text="Last login" />
+            <TableColumn prefWidth="118.0" text="Out ChipCount" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

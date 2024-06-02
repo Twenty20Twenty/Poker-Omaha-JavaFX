@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #3a1937;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nstu.rgz_poker.FXMLController.CombinationsController">
+    <children>
+        <Label layoutX="362.0" layoutY="25.0" text="Poker" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="96.0" />
+            </font>
+        </Label>
+        <Label layoutX="415.0" layoutY="138.0" text="Omaha hi lo" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="30.0" />
+            </font>
+        </Label>
+        <Button fx:id="combinationsToMenuButton" layoutX="739.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#combinationsToMenu" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #eeb4b4;" text="X" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="24.0" />
+            </font>
+        </Button>
+        <HBox layoutX="200.0" layoutY="75.0" prefHeight="510.0" prefWidth="600.0" AnchorPane.topAnchor="180.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="280.0">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Royal Flush">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Straight Flush">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="156.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="34.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="33.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="33.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="33.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="33.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Four of a Kind">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Full House">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Flush">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="550.0" prefWidth="280.0">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Straight">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Three of a Kind">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Two Pairs">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pair">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="280.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M25.549 10.88c-6.049-4.496-8.133-8.094-9.549-10.88v0c-0 0-0-0-0-0v0c-1.415 2.785-3.5 6.384-9.549 10.88-10.314 7.665-0.606 18.365 7.93 12.476-0.556 3.654-2.454 6.318-4.381 7.465v1.179h12.001v-1.179c-1.928-1.147-3.825-3.811-4.382-7.465 8.535 5.889 18.244-4.811 7.93-12.476z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="High Card">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="19.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="78.0" prefWidth="276.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="78.0" prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M16 0l-13 16 13 16 13-16z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane prefWidth="57.0">
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text fill="RED" layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M32 11.192c0 2.699-1.163 5.126-3.015 6.808h0.015l-10 10c-1 1-2 2-3 2s-2-1-3-2l-9.985-10c-1.852-1.682-3.015-4.109-3.015-6.808 0-5.077 4.116-9.192 9.192-9.192 2.699 0 5.126 1.163 6.808 3.015 1.682-1.852 4.109-3.015 6.808-3.015 5.077 0 9.192 4.116 9.192 9.192z" fill="RED" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                                <Pane>
+                                    <children>
+                                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="78.0" stroke="#d0d0d0" strokeType="INSIDE" width="50.0" />
+                                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="31.13671875">
+                                            <font>
+                                                <Font size="25.0" />
+                                            </font>
+                                        </Text>
+                                        <SVGPath content="M24.588 12.274c-1.845 0-3.503 0.769-4.683 2.022-0.5 0.531-1.368 1.16-2.306 1.713 0.441-1.683 1.834-3.803 2.801-4.733 1.239-1.193 2-2.87 2-4.734 0-3.59-2.859-6.503-6.4-6.541-3.541 0.038-6.4 2.951-6.4 6.541 0 1.865 0.761 3.542 2 4.734 0.967 0.93 2.36 3.050 2.801 4.733-0.939-0.553-1.806-1.182-2.306-1.713-1.18-1.253-2.838-2.022-4.683-2.022-3.575 0-6.471 2.927-6.471 6.541s2.897 6.542 6.471 6.542c1.845 0 3.503-0.792 4.683-2.045 0.525-0.558 1.451-1.254 2.447-1.832-0.094 4.615-2.298 8.005-4.541 9.341v1.179h12v-1.179c-2.244-1.335-4.448-4.726-4.541-9.341 0.995 0.578 1.922 1.274 2.447 1.832 1.18 1.253 2.838 2.045 4.683 2.045 3.575 0 6.471-2.928 6.471-6.542s-2.897-6.541-6.471-6.541z" layoutX="9.0" layoutY="37.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                    <HBox.margin>
+                        <Insets left="40.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </HBox>
+    </children>
+</AnchorPane>

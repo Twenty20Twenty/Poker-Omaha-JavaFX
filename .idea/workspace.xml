@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RGZ_Poker:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fa827de-43ee-4753-b95f-2ef730eae3d2" name="Changes" comment="fixup! add table scene" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2gpKJgZziOjQnC8uVb5Wb8Wqkwj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.Poker Client.executor": "Run",
+    "Application.Poker.executor": "Run",
+    "Application.Server.executor": "Run",
+    "Application.start.executor": "Run",
+    "JAR Application.RGZ_Poker-1.0-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.RGZ_Poker.jar.executor": "Run",
+    "Maven.RGZ_Poker [clean,install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/nikit/IdeaProjects/RGZ_Poker/src/main/java/ru/nstu/rgz_poker",
+    "last_opened_file_path": "C:/Users/nikit/IdeaProjects/RGZ_Poker/out/production/RGZ_Poker/ru/nstu/rgz_poker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/nikit/IdeaProjects/RGZ_Poker/Server/src/main/java/ru/nstu/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.1908046",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.nstu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\out\production\RGZ_Poker\ru\nstu\rgz_poker" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\out\production\RGZ_Poker\ru\nstu\rgz_poker\resources" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\src\main\java\ru\nstu\rgz_poker\resources" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\out\production\RGZ_Poker\ru\nstu" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\src\main\java\ru\nstu\rgz_poker\Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\out\production\RGZ_Poker\ru\nstu\rgz_poker" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\src\main\java\ru\nstu\rgz_poker\resources" />
+      <recent name="C:\Users\nikit\IdeaProjects\RGZ_Poker\out\production\RGZ_Poker\ru\nstu\rgz_poker\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.nstu.rgz_poker" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.nstu.rgz_poker.FXMLController" />
+      <recent name="ru.nstu.rgz_poker.Model" />
+      <recent name="ru.nstu" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Poker" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.nstu.rgz_poker.MainLauncher" />
+      <module name="RGZ_Poker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fa827de-43ee-4753-b95f-2ef730eae3d2" name="Changes" comment="" />
+      <created>1716389012215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716389012215</updated>
+      <workItem from="1716389013349" duration="7651000" />
+      <workItem from="1716447192365" duration="6000" />
+      <workItem from="1716825562982" duration="533000" />
+      <workItem from="1716878210958" duration="22892000" />
+      <workItem from="1716907277431" duration="354000" />
+      <workItem from="1716907664909" duration="869000" />
+      <workItem from="1716956916667" duration="2622000" />
+      <workItem from="1716961344897" duration="175000" />
+      <workItem from="1716964892809" duration="474000" />
+      <workItem from="1716968134637" duration="757000" />
+      <workItem from="1716970926817" duration="2178000" />
+      <workItem from="1716997040623" duration="6571000" />
+      <workItem from="1717048755117" duration="15890000" />
+      <workItem from="1717070999196" duration="3755000" />
+      <workItem from="1717086509452" duration="7162000" />
+      <workItem from="1717134237300" duration="192000" />
+      <workItem from="1717134438301" duration="24710000" />
+      <workItem from="1717217428800" duration="21000" />
+      <workItem from="1717221206891" duration="2507000" />
+      <workItem from="1717266731911" duration="7231000" />
+      <workItem from="1717314569285" duration="20449000" />
+      <workItem from="1717351810293" duration="988000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="fixup! add table scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! add table scene" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
